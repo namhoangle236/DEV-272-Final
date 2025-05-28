@@ -1,0 +1,5 @@
+echo "🔍 Running ESLint..."
+npx eslint .
+
+echo "🧪 Running unit tests..."
+npm test -- --bail --watchAll=false --passWithNoTests
