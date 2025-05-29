@@ -27,7 +27,7 @@ Team & Roles
 **UI/UX Designers** – Create wireframes, mockups, and improve the look and feel
 
 * Giecel T.
-* Nah P.
+* Anh P.
 
 ---
 
