@@ -1,5 +1,6 @@
 {
   "name": "272-final",
+  "description": "An app to aid with managing plants and plant care",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
