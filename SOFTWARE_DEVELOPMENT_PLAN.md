@@ -3,7 +3,7 @@ Team & Roles
 **Project Manager** – Keeps track of the timeline and makes sure everything gets done
 
 * Luis Gama
-* Nam Lee
+* Nam Le
 
 **Frontend Developers** – Build the UI and style the screens
 
@@ -12,7 +12,7 @@ Team & Roles
 
 **Backend / API** – Handle state management, API connections, and database stuff
 
-* Nam Lee
+* Nam Le
 * Giecel T.
 * Anh P.
 * Luis Gama
@@ -21,7 +21,7 @@ Team & Roles
 
 * Anh P.
 * Giecel T.
-* Nam Lee
+* Nam Le
 * Luis Gama
 
 **UI/UX Designers** – Create wireframes, mockups, and improve the look and feel
