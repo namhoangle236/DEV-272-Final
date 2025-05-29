@@ -14,12 +14,12 @@ Team & Roles
 
 * Nam Lee
 * Giecel T.
-* Nah P.
+* Anh P.
 * Luis Gama
 
 **QA / Testers** – Test features, find bugs, and help with deployment
 
-* Nah P.
+* Anh P.
 * Giecel T.
 * Nam Lee
 * Luis Gama
