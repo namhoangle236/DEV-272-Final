@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# Welcome to Plant Care app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -16,35 +16,24 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## About the App
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Many of us love plants, but it’s easy to let busy schedules get in the way of proper watering and care. This plant care app ensures that your greenery never goes neglected by combining personalized reminders with in-depth care information for each species. Whether you have a handful of succulents or an ever-growing indoor jungle, the app keeps everything organized, informs you of best practices, and lets you discover new plants to add to your collection.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Setup instruction
 
-## Get a fresh project
+1. Download & Install the App
 
-When you're ready, run:
+   1. Open your device’s app store
+      - iOS (iPhone/iPad): Open the App Store.
+      - Android: Open the Google Play Store.
 
-```bash
-npm run reset-project
-```
+   2. Search for “Plant Care Helper” (or the exact app name)
+      - Locate the official app icon 
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+   3. Tap “Install” (Android) / “Get” (iOS)
+      - Wait for the download and installation to complete.
+      - Once installed, tap Open to launch the app for the first time.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
