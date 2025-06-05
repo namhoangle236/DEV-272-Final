@@ -1,21 +1,5 @@
 # Welcome to Plant Care app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
 ## About the App
 
 Many of us love plants, but it’s easy to let busy schedules get in the way of proper watering and care. This plant care app ensures that your greenery never goes neglected by combining personalized reminders with in-depth care information for each species. Whether you have a handful of succulents or an ever-growing indoor jungle, the app keeps everything organized, informs you of best practices, and lets you discover new plants to add to your collection.
@@ -34,6 +18,20 @@ Many of us love plants, but it’s easy to let busy schedules get in the way of 
    3. Tap “Install” (Android) / “Get” (iOS)
       - Wait for the download and installation to complete.
       - Once installed, tap Open to launch the app for the first time.
+
+## Get started
+
+1. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+2. Start the app
+
+   ```bash
+   npx expo start
+   ```
 
 
 
