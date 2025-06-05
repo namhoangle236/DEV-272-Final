@@ -18,16 +18,17 @@ export default function RootLayout() {
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
 
-  if (!loaded) {
-    // Async font loading only occurs in development.
-    return null;
-  }
-
   // Create new Tanstack query client
   const PlantDB = new QueryClient()
 
   // Create state to hold Plant info and pass it into the context provider later
   const [PlantInfo, setPlantInfo] = useState([]);
+ 
+  // no state or hook after this point 
+  if (!loaded) {
+    // Async font loading only occurs in development.
+    return null;
+  } 
 
   return (
     <QueryClientProvider client={PlantDB}>
