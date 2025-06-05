@@ -1,25 +1,40 @@
-// import 'react-native-reanimated';
+import { useColorScheme } from '@/hooks/useColorScheme';
 
-//import { useColorScheme } from '@/hooks/useColorScheme';
 
-// export default function RootLayout() {
-//   const colorScheme = useColorScheme();
-//   const [loaded] = useFonts({
-//     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-//   });
+// Import Tanstack query provider
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+// Import the plant context
+import { PlantContext } from '../context/PlantContext.js';
 
-//   if (!loaded) {
-//     // Async font loading only occurs in development.
-//     return null;
-//   }
+export default function RootLayout() {
+  const colorScheme = useColorScheme();
+  const [loaded] = useFonts({
+    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+  });
 
-//   return (
-//     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-//       <Stack>
-//         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-//         <Stack.Screen name="+not-found" />
-//       </Stack>
-//       <StatusBar style="auto" />
-//     </ThemeProvider>
-//   );
-// }
+  // Create new Tanstack query client
+  const PlantDB = new QueryClient()
+
+  // Create state to hold Plant info and pass it into the context provider later
+  const [PlantInfo, setPlantInfo] = useState([]);
+ 
+  // no state or hook after this point 
+  if (!loaded) {
+    // Async font loading only occurs in development.
+    return null;
+  } 
+
+  return (
+    <QueryClientProvider client={PlantDB}>
+      <PlantContext.Provider value={{ PlantInfo, setPlantInfo }}>
+        <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+          <Stack>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            <Stack.Screen name="+not-found" />
+          </Stack>
+          <StatusBar style="auto" />
+        </ThemeProvider>
+      </PlantContext.Provider>
+    </QueryClientProvider>
+  );
+}
