@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useState } from 'react';
-import { Button, FlatList, Image, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Button, FlatList, Image, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function PlantLookUp() {
   const [search, setSearch] = useState('');
@@ -30,7 +30,7 @@ export default function PlantLookUp() {
 //   if (error) return <Text style={styles.error}>Error fetching data</Text>;
     
     return (
-    <ScrollView>
+    // <ScrollView>
         <View style={styles.container}>
         <TextInput
             placeholder="Search plants..."
@@ -59,7 +59,7 @@ export default function PlantLookUp() {
             )}
         />
         </View>
-    </ScrollView>
+    //{/* </ScrollView> */}
     );
 }
 
@@ -89,6 +89,9 @@ const styles = StyleSheet.create({
   item: {
     color: '#fff',
     marginVertical: 5,
+    borderWidth: 1,
+    borderColor: '#555',
+    padding: 5,
   },
   name: {
   color: '#fff',
