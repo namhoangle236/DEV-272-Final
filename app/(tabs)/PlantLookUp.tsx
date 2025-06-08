@@ -44,9 +44,9 @@ export default function PlantLookUp() {
         {error && <Text style={styles.error}>Error fetching data</Text>}
 
         <FlatList
-            data={data?.data || []}
+            data={data?.data || []}                         //  Note: API response wraps the actual list of plants inside the "data" key, so we must access it like this
             keyExtractor={(item) => item.id.toString()}
-            renderItem={({ item }) => (
+            renderItem={({ item }) => (                     // get the value of the 'item' key for each entry in the object created by the flat list, which is the plant object containing all data about the plant
             <View style={styles.item}>
                 <Image
                     source={{ uri: item.default_image?.thumbnail }}
