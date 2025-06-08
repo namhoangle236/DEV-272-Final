@@ -30,16 +30,17 @@ export default function PlantSearch() {
 
   useEffect(() => {
     setFilteredData(
-    PlantInfo.map((item, idx) => ({
-      // if item.id exists use that, otherwise fall back to index
-      id: item.id != null 
-        ? item.id.toString() 
-        : idx.toString(),
-      ...item
-    }))
-  )
-  }, [PlantInfo]);                                              // when the component mounts, or if there's changes in PlantInfo, 
-                                                                // this will update the filteredData to show all Plant
+      PlantInfo.map((item, idx) => ({
+        // if item.id exists use that, otherwise fall back to index
+        id: item.id != null 
+          ? item.id.toString() 
+          : idx.toString(),
+        ...item
+      }))
+    )
+  }, []);                                                       // setFilteredData to the PlantInfo data when the component mounts,
+                                                                // ensuring that all Plant data is displayed initially
+                                                                
   
   
   // (TODO)
