@@ -49,12 +49,15 @@ export default function PlantLookUp() {
             renderItem={({ item }) => (                     // get the value of the 'item' key for each entry in the object created by the flat list, which is the plant object containing all data about the plant
             <View style={styles.item}>
                 <Image
-                    source={{ uri: item.default_image?.thumbnail }}
+                    source={{ uri: item.default_image?.small_url }}
                     style={styles.thumbnail}
                 />
                 <View style={styles.container}>
                     <Text style={styles.name}>{item.common_name}</Text>
                 </View>
+
+                {/* <SavePlantButton plant={item} />            Pass the plant object to SavePlantButton */}
+
                 </View>
             )}
         />
